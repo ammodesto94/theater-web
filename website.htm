@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>theater</title>
+    <style>
+
+
+.bg-img{
+   background-image: url("theater-image-background.png");
+   min-height:390px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   
+
+
+}
+
+.centered{
+    position: absolute;
+    top: 300%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    
+    
+}
+
+.container{
+    position: absolute;
+    margin: 20px;
+    width: cover;
+    
+}
+.topnav{
+    overflow: hidden;
+    background-color: none;
+}
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.flexbox-container {
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+   
+}
+
+.flexbox-item{
+    width: 400px;
+    margin: 10px;
+    border: 3px hidden;
+    background-color: #dfdfdf;
+    
+}
+
+.flexbox-item-5{
+    min-height: 150px;
+    border-radius: 10px;
+    background-color: inherit;
+    line-height: 20px;
+    color:white;
+}
+
+.flexbox-item-4{
+    min-height: 150px;
+    background-color: inherit;
+    line-height: 20px;
+    color:white;
+}
+
+.flexbox-item-3{
+    min-height: 150px;
+    background-color: inherit;
+    line-height: 20px;
+    color:white;
+}
+
+.flexbox-item-2{
+    min-height: 150px;
+    background-color: inherit;
+    line-height: 20px;
+    color:white;
+
+}
+
+.flexbox-item-1{
+    min-height:20px;
+    margin-top: 20px;
+   background-color:grey;
+   position: relative;
+
+ 
+}
+
+.p{
+    width: 130px;
+    height: 50px;
+    background-color:inherit;
+    position: absolute;
+    top:57%;
+    left:45%;
+    transform: translate(2%, 2%);
+
+}
+
+.button {
+  position: relative;;
+ background-color: steelblue;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 0px;
+  width: 100px;
+ text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+    .button:after {
+  content: "";
+  background: tomato;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-right: 350%;
+  margin-right: 20px!important;
+  margin-top: -100%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="bg-img">
+    <div class="container">
+        <div class="topnav">
+        <div class="centered">Featured Shows</div>
+            <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Our Actions</a>
+    <a href="#">Mission</a>
+    <a href="#">Contact</a>
+
+</div>
+ </div>
+</div>
+    
+<div class="flexbox-container">
+    
+
+    <div class="flexbox-item flexbox-item-1">December 2021</div>
+
+    <div class="flexbox-item flexbox-item-2"> 
+        <button class="button">Read More</button>
+        <img src="container-pic.png"> 
+       <p> A Raisin In The Sun<br>
+    December 6, 2021 - January 12, 2022<br>
+              Griot Theater, 233 State St chicago, IL<br>
+            $75<p>
+    </div>
+     
+    <div class="flexbox-item flexbox-item-3">
+        <button class="button">Read More</button>
+        <img src="container-pic.png">
+      <p> A Raisin In The Sun<br>
+    January 14, 2022 - January 20, 2022<br>
+              Griot Theater, 233 State St chicago, IL<br>
+            $75</p>
+    </div>
+   
+   
+    <div class="flexbox-item flexbox-item-4">
+        <button class="button">Read More</button>
+        <img src="container-pic.png">
+       <p>A Raisin In The Sun<br>
+    Febuary 4, 2021 - Febuary 10, 2022<br>
+              Griot Theater, 233 State St chicago, IL<br>
+            $75</p>
+    </div>
+ 
+ 
+    <div class="flexbox-item flexbox-item-5">
+        <button class="button">Read More</button>
+        <img src="container-pic.png">
+       <p>A Raisin In The Sun<br>
+    March 10 , 2022 - March 18 , 2022<br>
+              Griot Theater, 233 State St chicago, IL<br>
+            $75</p>
+    </div>
+    
+    
+        
+</div>
+</body>
+</html>
